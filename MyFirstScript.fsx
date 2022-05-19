@@ -18,6 +18,14 @@ processFile "app.fs"
 processFile "README.md"
 
 // Exception Handling
+let divide x y =
+    try
+        Some(x / y)
+    with
+        | :? System.DivideByZeroException -> printfn "Can't divide by zero"; None
+        | ex -> printfn "Some other exception occurred"; None
 
+divide 10 2 // Some
+divide 1 0 //None
 
 

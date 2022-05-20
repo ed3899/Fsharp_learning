@@ -6,5 +6,7 @@
   <ItemGroup>
     <Compile Include="MyFirstScript.fs" />
     <Compile Include="Program.fs" />
+    <Compile Include="PatternMatching.fsx" />
+    <Compile Include="Async.fsx" />
   </ItemGroup>
 </Project>
